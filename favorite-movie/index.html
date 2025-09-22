@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+      <title>Мой любимый фильм</title>
+
+      <style>
+        body {
+          padding: 20px;
+        }
+
+        ol {
+          padding: 0;
+        }
+
+        .menu > li {
+          display: inline-block;
+          margin-left: 4px;
+        }
+
+        .menu > li:first-child {
+          margin: 0;
+        }
+
+        .menu a {
+          color: white;
+          text-decoration: none;
+          background-color: black;
+          border-radius: 6px;
+          padding: 4px 1em;
+        }
+
+        section {
+          padding-top: 50px;
+        }
+
+        section h2 {
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+          margin-top: 10px;
+        }
+
+        .reviews ol {
+          padding-left: 15px;
+        }
+
+        .user {
+          display: flex;
+          padding-top: 10px;
+        }
+
+        .review {
+          padding-top: 15px;
+        }
+
+        .review p {
+          padding-left: 10px;
+          margin: 0;
+        }
+
+        .review:first-of-type {
+          padding-top: 0;
+        }
+
+        .review p:first-child {
+          font-weight: bold;
+        }
+
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 10px;
+        }
+
+        footer {
+          padding-top: 50px;
+        }
+
+        .actors ul {
+          margin-left: -40px;
+          margin-top: 5px;
+        }
+      </style>
+    </head>
+
+    <body>
+      <header>
+        <h1>Добро пожаловать на страницу о "Великий Чебурек"</h1>
+      </header>
+
+      <nav>
+        <ol class="menu">
+          <li><a href="#about">О фильме</a></li>
+          <li><a href="#actors">Главные герои</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ol>
+      </nav>
+
+      <section>
+        <a name="about"></a>
+        
+        <h2>О фильме</h2>
+        <p>Кароче вот этат фильм очен крутой да. Вышел 24 февраля 2022 года, режиссер: Иванов И.И.</p>
+        <p>Сюжет: Три таджика из Республики Таджикистан решили возвести огромный золотой памятник чебуреку, но им всячески мешали местные власти, говоря, что это бессмысленная трата денег. Однако, после возведения памятника они поняли, что глубоко ошибались, ведь город Мухосранск стал всемирной достопримечательностью, курортным центром и каждый год сюда приезжает более чем 50 миллионов туристов.</p>
+      </section>
+
+      <section>
+        <a name="actors"></a>
+        
+        <h2>Главные герои</h2>
+        <ol class="actors">
+          <ul>Нурсултан Абарими Джарахов - придумал идею с памятником</ul>
+          <ul>Ислам Ирсен Нузумбаев - архитектор памятника</ul>
+          <ul>Узумбек Уссулум Наагаевич - долларовый миллиардер, инвестор</ul>
+          <ul>Ишак Селсертен Ахмедович - строитель, вечно попадающий в неприятности</ul>
+          <ul>Рахмат аль Денур Абрамович - председатель Госдумы, не дающий разрешения на реализацию проекта</ul>
+        </ol>
+      </section>
+
+      <section class="reviews">
+        <a name="reviews"></a>
+        
+        <h2>Отзывы</h2>
+        <p>Мне нравится тот факт, что Рахмат аль Денур Абрамович хоть и не давал разрешения на возведения памятника золотому чебуреку, но позже увидел в этом огромную перспективу - возможность удешивить постройку памятника и разницу положить себе в карман.</p>
+
+        <div class="user">
+          <img src="./images/tadjik2.jpg">
+          <div class="review">
+            <p>Нурджалим Саракашвили</p>
+            <p>Это всё ложь и провокации, в Республике Таджикистан никогда не воровали из бюджета средства налогоплательщиков!</p>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="./images/russki.webp">
+          <div class="review">
+            <p>Валентин Романов</p>
+            <p>Фильм очень понравился, полностью отражает всю работу депутатов Республики Таджикистан! Класс!</p>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="./images/tadjik1.webp">
+          <div class="review">
+            <p>Умурай аль Нурумбек</p>
+            <p>Хороший чебурек получился!</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        &copy; 2025 Никита
+      </footer>
+    </body>
+</html>
