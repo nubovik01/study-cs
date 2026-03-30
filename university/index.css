@@ -230,6 +230,14 @@ body {
   scroll-snap-type: x mandatory;
 }
 
+.program-list, .photo-list {
+  overflow-y: hidden;
+}
+
+.program-list::-webkit-scrollbar, .photo-list::-webkit-scrollbar {
+  display: none;
+}
+
 .photo-card {
   flex: 0 0 min(420px, 94%);
   border: 1px solid #111111;
@@ -639,4 +647,15 @@ body {
   .footer-menu, .socials {
     flex-basis: 100%;
   }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
