@@ -27,8 +27,11 @@ async function main() {
 
       duplicates = 0;
       seen.add(hash);
+
       const extension = (response.headers.get("content-type") || "").split("/")[1]?.split(";")[0] || "bin";
+
       fs.writeFileSync(`images/${hash}.${extension}`, buffer);
+
       console.log("New image! #", seen.size);
     } catch (error) {
       console.log("error", error.message);
